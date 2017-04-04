@@ -1,0 +1,16 @@
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\DSRDiscordBot.dll
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\DSRDiscordBot.pdb
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\Discord.Net.dll
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\Newtonsoft.Json.dll
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\Nito.AsyncEx.Concurrent.dll
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\Nito.AsyncEx.dll
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\Nito.AsyncEx.Enlightenment.dll
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\RestSharp.dll
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\WebSocket4Net.dll
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\Newtonsoft.Json.xml
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\Nito.AsyncEx.xml
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\Nito.AsyncEx.Concurrent.xml
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\Nito.AsyncEx.Enlightenment.xml
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\Release\RestSharp.xml
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\obj\Release\DSRDiscordBot.dll
+C:\Users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\obj\Release\DSRDiscordBot.pdb
