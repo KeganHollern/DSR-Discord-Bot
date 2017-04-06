@@ -39,7 +39,7 @@ namespace DSRDiscordBot {
         public static void ProcessResponse(BotManager bot, int type, string[] args) {
             switch (type) {
                 case 0: { // !performance
-                        bot.Respond("FPS: " + FormatArgs(args, 1) + ", SQF THREADS: " + FormatArgs(args, 2));
+                        bot.Respond("FPS: " + FormatArgs(args, 1) + ", SQF THREADS: " + FormatArgs(args, 2) + ", CPS: " + FormatArgs(args, 3));
                         break;
                     }
                 case 1: { // !statistics
