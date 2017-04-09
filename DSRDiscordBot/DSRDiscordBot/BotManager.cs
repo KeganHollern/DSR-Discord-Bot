@@ -24,12 +24,14 @@ namespace DSRDiscordBot {
             this.discordKey = key;
             this.discordServer = server;
             this.requests = new List<int>();
-            this.alreadyConnected = false;
 
             this.client = new DiscordClient();
             this.client.MessageReceived += Client_MessageReceived;
             this.client.ServerAvailable += Client_ServerAvailable;
+            this.alreadyConnected = false;
 
+
+            // turn the bot online
             this.client.Connect(this.discordKey, TokenType.Bot);
         }
 
@@ -37,12 +39,11 @@ namespace DSRDiscordBot {
             Respond("The server is now Offline!");
             this.client.MessageReceived -= Client_MessageReceived;
             this.client.ServerAvailable -= Client_ServerAvailable;
-            this.chatChannel = null;
             this.client.Disconnect();
         }
 
         public void Respond(string msg) {
-            if(chatChannel != null) {
+            if (chatChannel != null) {
                 chatChannel.SendMessage(msg);
             }
         }
@@ -52,16 +53,16 @@ namespace DSRDiscordBot {
             if(e.Server.Name != this.discordServer) {
                 return;
             }
+
+            chatChannel = e.Server.DefaultChannel;
             if (!alreadyConnected) {
-                chatChannel = e.Server.DefaultChannel;
-                chatChannel.SendMessage("The server is now Online!");
                 alreadyConnected = true;
+                Respond("The server is now Online!");
             }
         }
         private void Client_MessageReceived(object sender, MessageEventArgs e) {
             if(e.Channel == chatChannel) {
                 if (e.Message.Text.StartsWith("!")) {
-
                     RequestManager.ProcessRequest(this, e.Message.Text.ToLower(), (e.Message.User == e.Server.Owner));
                 }
             }
