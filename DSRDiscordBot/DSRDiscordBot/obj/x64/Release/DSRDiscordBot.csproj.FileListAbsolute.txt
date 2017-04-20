@@ -14,3 +14,20 @@ c:\users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot
 c:\users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\RestSharp.xml
 c:\users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\obj\x64\Release\DSRDiscordBot.dll
 c:\users\kegan\documents\visual studio 2015\Projects\DSRDiscordBot\DSRDiscordBot\obj\x64\Release\DSRDiscordBot.pdb
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\DSRDiscordBot.dll
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\DSRDiscordBot.pdb
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\Discord.Net.dll
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\Newtonsoft.Json.dll
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\Nito.AsyncEx.Concurrent.dll
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\Nito.AsyncEx.dll
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\Nito.AsyncEx.Enlightenment.dll
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\RestSharp.dll
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\WebSocket4Net.dll
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\Newtonsoft.Json.xml
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\Nito.AsyncEx.xml
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\Nito.AsyncEx.Concurrent.xml
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\Nito.AsyncEx.Enlightenment.xml
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\bin\x64\Release\RestSharp.xml
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\obj\x64\Release\DSRDiscordBot.csprojResolveAssemblyReference.cache
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\obj\x64\Release\DSRDiscordBot.dll
+E:\Plugin Dev Pack\Github\Discord Bot\DSRDiscordBot\DSRDiscordBot\obj\x64\Release\DSRDiscordBot.pdb

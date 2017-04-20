@@ -6,22 +6,23 @@ using System.Threading.Tasks;
 
 namespace DSRDiscordBot {
     public struct DiscordRequest {
-        public string msg;
+        public List<string> msg;
         public bool adminOnly;
     }
     public class RequestManager {
         public static List<DiscordRequest> RequestTypes = new List<DiscordRequest>();
         public static void initialize() {
-            addRequest("!performance", false);
-            addRequest("!statistics", false);
-            addRequest("!shutdown", true);
-            addRequest("!players", false);
-            addRequest("!performance", false); // doesnt get added because the command already exists
+            addRequest(new List<string>() { "!performance", "!perf" }, false);
+            addRequest(new List<string>() { "!statistics", "!stats" }, false);
+            addRequest(new List<string>() { "!shutdown", "!restart" }, true);
+            addRequest(new List<string>() { "!players", "!plrs" }, false);
+            addRequest(new List<string>() { "!allinfo", "!ainfo" }, false);
+            addRequest(new List<string>() { "!time", "!gametime" }, false);
         }
 
-        public static void addRequest(string rMsg, bool rAdminOnly) {
+        public static void addRequest(List<string> rMsg, bool rAdminOnly) {
             for(int i = 0; i < RequestTypes.Count;i++) {
-                if(RequestTypes.ElementAt(i).msg == rMsg) {
+                if(RequestTypes.ElementAt(i).msg.Equals(rMsg)) {
                     return;
                 }
             }
@@ -54,6 +55,14 @@ namespace DSRDiscordBot {
                         bot.Respond("Players: \n    " + FormatArgs(args, 1).Replace("`", "\n    "));
                         break;
                     }
+                case 4: { // !allinfo
+                        bot.Respond("FPS: " + FormatArgs(args, 1) + ", SQF THREADS: " + FormatArgs(args, 2) + ", CPS: " + FormatArgs(args, 3) + ", UPTIME: " + FormatArgs(args, 1) + " min, PLAYERS: " + FormatArgs(args, 2) + ",  ZOMBIES: " + FormatArgs(args, 3));
+                        break;
+                    }
+                case 5: { //time
+                        bot.Respond("TIME: " + FormatArgs(args, 1) + " :clock:");
+                        break;
+                    }
                 default: {
                         bot.Respond("Unknown Message Received! Please Update Your Bot!");
                         break;
@@ -65,7 +74,7 @@ namespace DSRDiscordBot {
             string helpMsg = "Commands: \n    ";
             for(int i = 0; i < RequestTypes.Count; i++) {
                 DiscordRequest request = RequestTypes.ElementAt(i);
-                if(request.msg == msg) {
+                if(request.msg.Contains(msg)) {
                     if(request.adminOnly && !isOwner) {
                         bot.Respond("Sorry! Only the Discord Owner can do this command!");
                         return;
@@ -77,7 +86,10 @@ namespace DSRDiscordBot {
                     if (request.adminOnly && !isOwner) {
                         continue;
                     }
-                    helpMsg += request.msg + " \n    ";
+                    foreach(string mEntry in request.msg) {
+                        helpMsg += mEntry + " or ";
+                    }
+                    helpMsg += " \n    ";
                 }
             }
             if (msg == "!help") {
